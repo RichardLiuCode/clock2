@@ -2,13 +2,30 @@
 <html>
 
 <head>
-
+    <script defer src="./assets/script.js"></script>
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
     <div class="leftBar">
-        <button>Clock</button>
-        <button>Timer</button>
+        <div class="leftBatTopFiller"></div>
+        <button class="optionBtn">
+            <img src="./assets/Images/time.png">
+            <p>Clock</p>
+        </button>
+        <button class="optionBtn">
+            <img src="./assets/Images/sand-clock.png">
+            <p>Timer</p>
+        </button>
+        <button class="optionBtn">
+            <img src="./assets/Images/stopwatch.png">
+            <p>Stopwatch</p>
+        </button>
+    </div>
+    <div class="mainWrapper">
+        <div id="ClockScreen"></div>
+        <div id="TimerScreen"></div>
+        <div id="StopwatchScreen"></div>
     </div>
 </body>
 

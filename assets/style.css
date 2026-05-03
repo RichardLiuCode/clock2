@@ -1,0 +1,59 @@
+* {
+    padding: none;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.leftBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #F3F3F3;
+    margin-left: 0px;
+    width: 200px;
+    height: 100%;
+}
+
+.leftBar .optionBtn {
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background: none;
+}
+
+.leftBar .optionBtn:hover {
+    background: rgb(235, 233, 233);
+}
+
+.leftBar .optionBtn img {
+    width: 20px;
+    height: 20px;
+}
+
+.leftBar .optionBtn p {
+    font-family: arial;
+}
+
+.leftBar .leftBatTopFiller {
+    height: 20px;
+}
+
+.mainWrapper {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: calc(100% - 200px);
+    height: 100%;
+    background: none;
+}
