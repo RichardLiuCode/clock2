@@ -130,6 +130,64 @@ body {
     display: none;
 }
 
+/* Stopwatch Screen */
+
 #StopwatchScreen {
     display: none;
+}
+
+
+.stopwatchScreenWrapper {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stopwatchBackground {
+    background: none;
+    width: 950px;
+    height: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: 40px;
+    border: none;
+
+}
+
+#stopwatchTime {
+    user-select: none;
+    pointer-events: none;
+    font-size: 200px;
+    font-family: arial;
+    color: rgb(163, 164, 169);
+    line-height: 230px;
+    background: none;
+}
+
+#stopwatchStartBtn {
+    cursor: pointer;
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+#stopwatchStartBtn img {
+    width: 50px;
+    height: 50px;
+}
+
+#stopwatchStartBtn p {
+    font-size: 20px;
+    color: rgb(96, 94, 94);
 }

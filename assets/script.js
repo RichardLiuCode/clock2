@@ -46,3 +46,27 @@ setInterval(function () {
         document.getElementById("amorpm").textContent = "AM";
     }
 }, 500);
+
+// Stopwatch
+
+let isStopwatchRunning = false;
+let stopwatchTimeSec = 0;
+let loop = undefined;
+document.getElementById("stopwatchStartBtn").addEventListener("click", function () {
+    if (!isStopwatchRunning) {
+        isStopwatchRunning = true;
+        document.getElementById("stopwatchStartBtn").getElementsByTagName("p")[0].textContent = "Pause";
+        loop = setInterval(function () {
+            stopwatchTimeSec++;
+            const stopwatchHours = Math.floor(stopwatchTimeSec / 60 / 60) % 60;
+            const stopwatchMinutes = Math.floor(stopwatchTimeSec / 60) % 60;
+            const stopwatchSeconds = stopwatchTimeSec % 60;
+            const stopwatchDisplayTime = `${stopwatchMinutes.toString().padStart(2, "0")}:${stopwatchSeconds.toString().padStart(2, 0)}`;
+            document.getElementById("stopwatchTime").textContent = stopwatchDisplayTime;
+        }, 1000);
+    } else {
+        isStopwatchRunning = false;
+        document.getElementById("stopwatchStartBtn").getElementsByTagName("p")[0].textContent = "Start";
+        clearInterval(loop);
+    }
+});
