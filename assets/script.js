@@ -61,7 +61,7 @@ document.getElementById("stopwatchStartBtn").addEventListener("click", function 
             const stopwatchHours = Math.floor(stopwatchTimeSec / 60 / 60) % 60;
             const stopwatchMinutes = Math.floor(stopwatchTimeSec / 60) % 60;
             const stopwatchSeconds = stopwatchTimeSec % 60;
-            const stopwatchDisplayTime = `${stopwatchMinutes.toString().padStart(2, "0")}:${stopwatchSeconds.toString().padStart(2, 0)}`;
+            const stopwatchDisplayTime = `${stopwatchHours.toString().padStart(2, "0")}:${stopwatchMinutes.toString().padStart(2, "0")}:${stopwatchSeconds.toString().padStart(2, 0)}`;
             document.getElementById("stopwatchTime").textContent = stopwatchDisplayTime;
         }, 1000);
     } else {
