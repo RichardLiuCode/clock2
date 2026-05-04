@@ -29,11 +29,15 @@ body {
     align-items: center;
     gap: 10px;
     border: none;
-    background: none;
+    background-color: none;
 }
 
 .leftBar .optionBtn:hover {
-    background: rgb(235, 233, 233);
+    background-color: rgb(235, 233, 233);
+}
+
+.leftBarSelectedButton {
+    background-color: rgb(235, 233, 233);
 }
 
 .leftBar .optionBtn img {
@@ -56,4 +60,61 @@ body {
     width: calc(100% - 200px);
     height: 100%;
     background: none;
+}
+
+#ClockScreen,
+#TimerScreen,
+#StopwatchScreen {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(239, 240, 241, 0.418);
+}
+
+/* Clock Screen */
+
+#ClockScreen {
+    display: block;
+}
+
+.clockScreenWrapper {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clockBackground {
+    background-color: rgb(226, 228, 233);
+    width: 600px;
+    height: 250px;
+    box-shadow: 0 0 16px 16px lightgray;
+    position: relative;
+}
+
+#clockTime {
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 200px;
+    font-family: arial;
+    color: white;
+    text-shadow: 0 0 10px lightgray;
+    line-height: 230px;
+    background: none;
+}
+
+/* Timer Screen */
+
+#TimerScreen {
+    display: none;
+}
+
+#StopwatchScreen {
+    display: none;
 }

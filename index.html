@@ -9,23 +9,29 @@
 <body>
     <div class="leftBar">
         <div class="leftBatTopFiller"></div>
-        <button class="optionBtn">
+        <button class="optionBtn" id="clockBtn">
             <img src="./assets/Images/time.png">
             <p>Clock</p>
         </button>
-        <button class="optionBtn">
+        <button class="optionBtn" id="timerBtn">
             <img src="./assets/Images/sand-clock.png">
             <p>Timer</p>
         </button>
-        <button class="optionBtn">
+        <button class="optionBtn" id="stopwatchBtn">
             <img src="./assets/Images/stopwatch.png">
             <p>Stopwatch</p>
         </button>
     </div>
     <div class="mainWrapper">
-        <div id="ClockScreen"></div>
-        <div id="TimerScreen"></div>
-        <div id="StopwatchScreen"></div>
+        <div id="ClockScreen" class="screen">
+            <div class="clockScreenWrapper">
+                <div class="clockBackground">
+                    <div id="clockTime">12:00</div>
+                </div>
+            </div>
+        </div>
+        <div id="TimerScreen" class="screen"></div>
+        <div id="StopwatchScreen" class="screen"></div>
     </div>
 </body>
 
